@@ -10,6 +10,9 @@ public class GopherSpawner : MonoBehaviour
     public GameObject gopherParent;
     private IEnumerator waitAndSpawn;
 
+    private GameObject _activeGopher;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,10 @@ public class GopherSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
+
+
 
     // Method to pick a random time between 'min' and 'max' seconds, calls 'SpawnGopher()' after selected number of seconds
     IEnumerator WaitAndSpawn(float min, float max) {
@@ -41,8 +47,13 @@ public class GopherSpawner : MonoBehaviour
     // Method to spawn a gopher - called from RandomTime
     void SpawnGopher() {
 
-        Instantiate(gopher, new Vector3(transform.position.x, transform.position.y, transform.position.z - 3), transform.rotation, gopherParent.transform);
-        Debug.Log("Gopher Spawned!");
+        if (_activeGopher == null) {
+
+            _activeGopher = Instantiate(gopher, new Vector3(transform.position.x, transform.position.y, transform.position.z - 3), transform.rotation, gopherParent.transform);
+
+            Debug.Log("Gopher Spawned!");
+
+        }
 
     }
 }
