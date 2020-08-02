@@ -51,8 +51,6 @@ public class GopherSpawner : MonoBehaviour
 
             _activeGopher = Instantiate(gopher, new Vector3(transform.position.x, transform.position.y, transform.position.z - 3), transform.rotation, gopherParent.transform);
 
-            Debug.Log("Gopher Spawned!");
-
         }
 
     }
