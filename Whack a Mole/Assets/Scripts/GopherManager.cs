@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelLoader : MonoBehaviour
+public class GopherManager : MonoBehaviour
 {
+    private GopherSpawner[] _gopherSpawners;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +18,13 @@ public class LevelLoader : MonoBehaviour
         
     }
 
-    void LoadLevelOne() {
+    // Start spawning gophers
+    void StartSpawning() {
 
     }
 
-    void LoadOptionsLevel() {
-
-    }
-
-    void QuitGame() {
+    // Stop spawning gophers
+    void StopSpawning() {
         
     }
 }

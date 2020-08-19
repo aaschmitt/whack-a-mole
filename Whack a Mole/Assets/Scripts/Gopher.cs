@@ -4,52 +4,34 @@ using UnityEngine;
 
 public class Gopher : MonoBehaviour
 {
+    private int _lifetime;
+    private int _pointsOnDeath;
 
-    // instance variables
-    public LevelManager levelManager;
-    private IEnumerator waitAndDestroy;
-    private int lifetime;
-    private int pointsOnDeath;
-    
-    // customizable constructor
-    public Gopher(int lifetime, int pointsOnDeath) {
-
-        this.lifetime = lifetime;
-        this.pointsOnDeath = pointsOnDeath;
-
+    Gopher(int lifetime, int pointsOnDeath) {
+        _lifetime = lifetime;
+        _pointsOnDeath = pointsOnDeath;
     }
 
-    // default constructor
-    public Gopher() {
-
-        lifetime = 2;
-        pointsOnDeath = 3;
-
+    Gopher() {
+        _lifetime = 2;
+        _pointsOnDeath = 5;
     }
 
     // Start is called before the first frame update
-    void Start() {
-
-       waitAndDestroy = WaitAndDestroy();
-       StartCoroutine(waitAndDestroy);
-
+    void Start()
+    {
+        
     }
 
-    // Destroy the object and update score if clicked
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    // Called when a gopher is clicked
     void OnMouseDown() {
-
-        Destroy(this.gameObject);
-        levelManager.AnnounceGopherDeath(pointsOnDeath);
-
+        // Announce a gopher has been clicked
+        // Destroy the gopher
     }
-
-    IEnumerator WaitAndDestroy() {
-
-        yield return new WaitForSeconds(lifetime);
-
-        // Destroy gopher if not clicked during lifetime
-        Destroy(this.gameObject);
-
-    }
-
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelLoader : MonoBehaviour
+public class TimeDisplay : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,15 +16,7 @@ public class LevelLoader : MonoBehaviour
         
     }
 
-    void LoadLevelOne() {
-
-    }
-
-    void LoadOptionsLevel() {
-
-    }
-
-    void QuitGame() {
+    void UpdateDisplay() {
         
     }
 }

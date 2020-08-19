@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelLoader : MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
+    private ScoreDisplay _scoreDisplay;
+    private int _currentScore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +19,12 @@ public class LevelLoader : MonoBehaviour
         
     }
 
-    void LoadLevelOne() {
-
+    // Add score
+    void AddScore() {
+        // Update scoreDisplay
     }
 
-    void LoadOptionsLevel() {
-
-    }
-
-    void QuitGame() {
-        
+    void RemoveScore() {
+        // Update scoreDisplay
     }
 }

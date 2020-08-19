@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelLoader : MonoBehaviour
+public class TimeManager : MonoBehaviour
 {
+    private TimeDisplay _timeDisplay;
+    private int _timeRemaining;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +19,14 @@ public class LevelLoader : MonoBehaviour
         
     }
 
-    void LoadLevelOne() {
+    // Start the timer
+    void StartTimer() {
 
     }
 
-    void LoadOptionsLevel() {
+    // Stop the timer
+    void StopTimer() {
 
     }
 
-    void QuitGame() {
-        
-    }
 }
