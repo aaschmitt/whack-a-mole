@@ -4,34 +4,18 @@ using UnityEngine;
 
 public class Gopher : MonoBehaviour
 {
-    private int _lifetime;
-    private int _pointsOnDeath;
-
-    Gopher(int lifetime, int pointsOnDeath) {
-        _lifetime = lifetime;
-        _pointsOnDeath = pointsOnDeath;
-    }
-
-    Gopher() {
-        _lifetime = 2;
-        _pointsOnDeath = 5;
-    }
-
+    private float _lifetime;
+    
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        _lifetime = Random.Range(1f,3f);                                      // Set a random lifetime for the gophers
+        StartCoroutine(WaitAndDestroy());                              // Start lifetime routine of gophers   
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator WaitAndDestroy()
     {
-        
-    }
-
-    // Called when a gopher is clicked
-    void OnMouseDown() {
-        // Announce a gopher has been clicked
-        // Destroy the gopher
+        yield return new WaitForSeconds(_lifetime);                           // Gopher will be alive for {lifetime} seconds, then destroyed
+        Destroy(this.gameObject);
     }
 }
