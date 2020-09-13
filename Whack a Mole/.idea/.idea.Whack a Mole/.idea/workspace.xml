@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6ac5a06-bd54-493a-82b6-e316a6ab5366" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Diagrams/Class Diagram.drawio" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +41,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EventTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimerDisplay.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +92,8 @@
       <updated>1599589718592</updated>
       <workItem from="1599589726139" duration="56000" />
       <workItem from="1599934937386" duration="6467000" />
-      <workItem from="1600030652387" duration="3423000" />
+      <workItem from="1600030652387" duration="3916000" />
+      <workItem from="1600036732521" duration="1639000" />
     </task>
     <servers />
   </component>
