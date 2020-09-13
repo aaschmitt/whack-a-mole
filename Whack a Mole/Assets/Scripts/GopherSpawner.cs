@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GopherSpawner : MonoBehaviour
 {
-    public GameObject gopherPrefab;
+    public static event UnityAction GopherClicked;
+    
+    [SerializeField] private GameObject gopherPrefab = null;
 
     private bool _hasGopher = false;
     private GameObject _currentGopher = null;
@@ -28,7 +31,6 @@ public class GopherSpawner : MonoBehaviour
             else
             {
                 _hasGopher = false;
-                //_currentGopher = null;
             }
         }
     }
@@ -38,12 +40,11 @@ public class GopherSpawner : MonoBehaviour
         _currentGopher = Instantiate(gopherPrefab, this.transform);          // Instantiate a Gopher gameObject at the same location as this spawner
     }
 
-    void OnMouseDown()
+    private void OnMouseDown()
     {
         if (!_hasGopher) return;                                             // If there is an active gopher, destroy it and {print a message}
         Destroy(_currentGopher);
         _hasGopher = false;
-        Debug.Log("A gopher was clicked and destroyed!");
-        //TODO add event to increase score
+        GopherClicked?.Invoke();                                             // Send the message that a gopher was clicked
     }
 }

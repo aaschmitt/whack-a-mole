@@ -20,32 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6ac5a06-bd54-493a-82b6-e316a6ab5366" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Diagrams/Class Diagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../Diagrams/Class Diagram.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diagrams/Class Diagram.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GopherSpawner.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GopherSpawner.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelManager.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelManager.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GopherManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GopherManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeDisplay.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeDisplay.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +35,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EventTester.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
       </list>
     </option>
   </component>
@@ -111,6 +95,7 @@
       <updated>1599589718592</updated>
       <workItem from="1599589726139" duration="56000" />
       <workItem from="1599934937386" duration="6467000" />
+      <workItem from="1600030652387" duration="3423000" />
     </task>
     <servers />
   </component>
