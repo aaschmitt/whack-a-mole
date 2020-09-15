@@ -9,8 +9,9 @@
         <e p="Scripts" t="Include">
           <e p="Gopher.cs" t="Include" />
           <e p="GopherSpawner.cs" t="Include" />
+          <e p="LevelTimer.cs" t="Include" />
+          <e p="LevelTimerUI.cs" t="Include" />
           <e p="ScoreDisplay.cs" t="Include" />
-          <e p="TimerDisplay.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

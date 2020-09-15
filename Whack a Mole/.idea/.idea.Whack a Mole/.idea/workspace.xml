@@ -22,6 +22,11 @@
     <list default="true" id="c6ac5a06-bd54-493a-82b6-e316a6ab5366" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TimerDisplay.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TimerDisplay.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimerDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimerDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -42,6 +48,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameplayTimerUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelTimerUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" />
       </list>
     </option>
   </component>
@@ -94,6 +103,7 @@
       <workItem from="1599934937386" duration="6467000" />
       <workItem from="1600030652387" duration="3916000" />
       <workItem from="1600036732521" duration="1639000" />
+      <workItem from="1600201684679" duration="4406000" />
     </task>
     <servers />
   </component>
