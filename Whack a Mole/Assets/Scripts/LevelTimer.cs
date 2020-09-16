@@ -7,11 +7,11 @@ public class LevelTimer : MonoBehaviour
     [SerializeField] private int levelTimeInSeconds = 0;
     
     private int _secondsSinceStart = 0;
-    private LevelTimerUI _levelTimerUI;
+    private LevelTimerUI _levelTimerUI = null;
 
     private void Start()
     {
-        _levelTimerUI = GameObject.FindGameObjectWithTag("LevelTimer").GetComponent<LevelTimerUI>();                    // Get a reference to and set up the LevelTimerUI
+        _levelTimerUI = GameObject.FindGameObjectWithTag("LevelTimerUI").GetComponent<LevelTimerUI>();                    // Get a reference to and set up the LevelTimerUI
         _levelTimerUI.Setup(levelTimeInSeconds);
 
         //TODO start the timer for now, later move this responsibility into a LevelManager class
