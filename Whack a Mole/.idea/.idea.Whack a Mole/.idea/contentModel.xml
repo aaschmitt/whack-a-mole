@@ -9,8 +9,10 @@
         <e p="Scripts" t="Include">
           <e p="Gopher.cs" t="Include" />
           <e p="GopherSpawner.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
           <e p="LevelScore.cs" t="Include" />
           <e p="LevelScoreUI.cs" t="Include" />
+          <e p="LevelSettings.cs" t="Include" />
           <e p="LevelTimer.cs" t="Include" />
           <e p="LevelTimerUI.cs" t="Include" />
         </e>
