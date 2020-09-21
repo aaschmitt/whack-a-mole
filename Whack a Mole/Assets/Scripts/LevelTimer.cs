@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class LevelTimer : MonoBehaviour
 {
+    
     public int LevelTimeInSeconds { get; set; }
 
     private int _secondsSinceStart = 0;
     private LevelTimerUI _levelTimerUI = null;
 
     private void Start()
+    {
+        ConfigureUI();
+    }
+
+    private void ConfigureUI()
     {
         _levelTimerUI = GameObject.FindGameObjectWithTag("LevelTimerUI").GetComponent<LevelTimerUI>();                   // Get a reference to and set up the LevelTimerUI
         _levelTimerUI.Setup(LevelTimeInSeconds);

@@ -11,12 +11,7 @@ public class GopherSpawner : MonoBehaviour
 
     private bool _hasGopher = false;
     private GameObject _currentGopher = null;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(WaitAndSpawn());                               // Start spawning gophers           
-    }
+    private Coroutine _gopherSpawning = null;
 
     private IEnumerator WaitAndSpawn()
     {
@@ -46,5 +41,16 @@ public class GopherSpawner : MonoBehaviour
         Destroy(_currentGopher);
         _hasGopher = false;
         GopherClicked?.Invoke();                                             // Send the message that a gopher was clicked
+    }
+
+    public void StartSpawning()
+    {
+        _gopherSpawning = StartCoroutine(WaitAndSpawn());
+    }
+
+    public void StopSpawning()
+    {
+        if (_hasGopher) Destroy(_currentGopher);                            // If there is an active gopher, destroy it
+        StopCoroutine(_gopherSpawning);                                    // Stop the spawning gophers with coroutine
     }
 }

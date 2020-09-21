@@ -11,10 +11,14 @@
           <e p="GopherSpawner.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="LevelScore.cs" t="Include" />
-          <e p="LevelScoreUI.cs" t="Include" />
-          <e p="LevelSettings.cs" t="Include" />
           <e p="LevelTimer.cs" t="Include" />
-          <e p="LevelTimerUI.cs" t="Include" />
+          <e p="ScriptableObjects" t="Include">
+            <e p="LevelSettings.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="LevelScoreUI.cs" t="Include" />
+            <e p="LevelTimerUI.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1de4afb9f813dd478ed34d152c355e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelScoreGameObject: {fileID: 0}
-  levelTimerGameObject: {fileID: 0}
+  levelScorePrefab: {fileID: 6925695477478037877, guid: 9b1fef2da4b107a4b822486c1cce9cc6,
+    type: 3}
+  levelTimerPrefab: {fileID: 301377385505895858, guid: c9d82cb376e60d64aa5b129865f308a4,
+    type: 3}
   levelSettings: {fileID: 11400000, guid: c415ee7712abe21449cf392114f9ae6b, type: 2}

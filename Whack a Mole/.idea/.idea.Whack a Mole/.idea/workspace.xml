@@ -22,13 +22,19 @@
     <list default="true" id="c6ac5a06-bd54-493a-82b6-e316a6ab5366" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelScoreUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelScoreUI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelTimerUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelTimerUI.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScoreUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScoreUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelSettings.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelTimerUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelTimerUI.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,26 +45,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelScoreUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LevelTimerUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventTester.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameplayTimerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelTimerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelScoreUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelDifficulty.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelDifficultySettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +121,11 @@
       <workItem from="1600036732521" duration="1639000" />
       <workItem from="1600201684679" duration="4406000" />
       <workItem from="1600212985243" duration="1879000" />
-      <workItem from="1600633516978" duration="6462000" />
+      <workItem from="1600633516978" duration="6619000" />
+      <workItem from="1600691413177" duration="1753000" />
+      <workItem from="1600712077009" duration="2424000" />
+      <workItem from="1600728313325" duration="1389000" />
+      <workItem from="1600729752031" duration="79000" />
     </task>
     <servers />
   </component>
@@ -136,5 +148,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1600713604938">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1600713604938" />
   </component>
 </project>

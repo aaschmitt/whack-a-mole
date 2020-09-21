@@ -6,7 +6,6 @@ public class Gopher : MonoBehaviour
 {
     private float _lifetime;
     
-    // Start is called before the first frame update
     private void Start()
     {
         _lifetime = Random.Range(1f,3f);                                      // Set a random lifetime for the gophers

@@ -15,3 +15,7 @@ MonoBehaviour:
   levelDifficulty: 0
   levelLengthInSeconds: 10
   scorePerGopher: 5
+  minSecondsToSpawn: 2
+  maxSecondsToSpawn: 5
+  minGopherLifetime: 3
+  maxGopherLifetime: 6
