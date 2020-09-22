@@ -17,11 +17,12 @@ public class LevelManager : MonoBehaviour
     {
         InstantiateLevelObjects();
         LoadLevelSettings();
+        LevelTimer.TimerFinished += EndLevel;
         StartLevel();
     }
 
     /*
-     * Starts the level -- Starts level timer and starts spawning gophers
+     * Desc: Starts the level -- Starts level timer and starts spawning gophers
      */
     private void StartLevel()
     {
@@ -30,7 +31,7 @@ public class LevelManager : MonoBehaviour
     }
 
     /*
-     * Stops the level -- Stops the timer and stops spawning gophers, also destroys any that were left in the scene
+     * Desc: Stops the level -- Stops the timer and stops spawning gophers, also destroys any that were left in the scene
      */
     private void EndLevel()
     {
@@ -39,16 +40,26 @@ public class LevelManager : MonoBehaviour
     }
     
     /*
-     * Loads the level settings defined in the LevelSettings ScriptableObject (see levelSettings instance variable)
+     * Desc: Loads the level settings defined in the LevelSettings ScriptableObject (see levelSettings instance variable)
      */
     private void LoadLevelSettings()
     {
         _levelTimer.LevelTimeInSeconds = levelSettings.levelLengthInSeconds;
         _levelScore.ScorePerGopher = levelSettings.scorePerGopher;
+
+        //TODO use LINQ?
+        foreach (var gopherSpawner in gopherSpawners)
+        {
+            var component = gopherSpawner.GetComponent<GopherSpawner>();
+            component.MinTimeToNextSpawn = levelSettings.minSecondsToSpawn;
+            component.MaxTimeToNextSpawn = levelSettings.maxSecondsToSpawn;
+            component.MinGopherLifetime = levelSettings.minGopherLifetime;
+            component.MaxGopherLifetime = levelSettings.maxGopherLifetime;
+        }
     }
     
     /*
-     *  Instantiates instances of necessary level objects -- LevelScore and LevelTimer
+     * Desc: Instantiates instances of necessary level objects -- LevelScore and LevelTimer
      */
     private void InstantiateLevelObjects()
     {
@@ -58,7 +69,7 @@ public class LevelManager : MonoBehaviour
 
     #region Gopher Spawning
     /*
-     * Iterates through all of the GopherSpawners and activates them -- starts spawning gophers
+     * Desc: Iterates through all of the GopherSpawners and activates them -- starts spawning gophers
      */
     private void StartSpawningGophers()
     {
@@ -71,7 +82,7 @@ public class LevelManager : MonoBehaviour
     }
 
     /*
-     * Iterates through all of the GopherSpawners and deactivates them -- stops spawning gophers
+     * Desc: Iterates through all of the GopherSpawners and deactivates them -- stops spawning gophers
      */
     private void StopSpawningGophers()
     {
@@ -83,4 +94,9 @@ public class LevelManager : MonoBehaviour
         }
     }
     #endregion
+
+    private void OnDestroy()
+    {
+        LevelTimer.TimerFinished -= EndLevel;                                                // Unsubscribe to TimerFinished event on destruction of this object
+    }
 }

@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class Gopher : MonoBehaviour
 {
-    private float _lifetime;
-    
+    public float Lifetime { get; set; }
+
     private void Start()
     {
-        _lifetime = Random.Range(1f,3f);                                      // Set a random lifetime for the gophers
         StartCoroutine(WaitAndDestroy());                              // Start lifetime routine of gophers   
     }
 
     private IEnumerator WaitAndDestroy()
     {
-        yield return new WaitForSeconds(_lifetime);                           // Gopher will be alive for {lifetime} seconds, then destroyed
+        yield return new WaitForSeconds(Lifetime);                           // Gopher will be alive for {lifetime} seconds, then destroyed
         Destroy(this.gameObject);
     }
 }

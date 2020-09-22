@@ -20,21 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6ac5a06-bd54-493a-82b6-e316a6ab5366" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gopher_Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gopher_Spawner.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScoreUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScoreUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelSettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelSettings.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelTimerUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelTimerUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +55,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelDifficulty.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelDifficultySettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
       </list>
     </option>
   </component>
@@ -126,6 +120,9 @@
       <workItem from="1600712077009" duration="2424000" />
       <workItem from="1600728313325" duration="1389000" />
       <workItem from="1600729752031" duration="79000" />
+      <workItem from="1600804865276" duration="1705000" />
+      <workItem from="1600806828920" duration="4317000" />
+      <workItem from="1600811634766" duration="21000" />
     </task>
     <servers />
   </component>

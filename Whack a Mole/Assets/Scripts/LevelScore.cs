@@ -9,7 +9,7 @@ public class LevelScore : MonoBehaviour
     private int _currentScore = 0;
     private LevelScoreUI _levelScoreUI = null;
     
-    void Start()
+    private void Start()
     {
         ConfigureUI();
         GopherSpawner.GopherClicked += AddScore;                                                                  // Subscribe to the GopherClicked event
@@ -25,5 +25,10 @@ public class LevelScore : MonoBehaviour
     {
         _currentScore += ScorePerGopher;                                                                         // Add score and update display
         _levelScoreUI.UpdateDisplay(_currentScore);
+    }
+
+    private void OnDestroy()
+    {
+        GopherSpawner.GopherClicked -= AddScore;                                                                // Unsubscribe to GopherClicked event on destruction of this object
     }
 }
