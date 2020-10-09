@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871692fa6e977f04a8b78a82dd660c4b, type: 3}
   m_Name: LevelOneSettings
   m_EditorClassIdentifier: 
-  levelDifficulty: 0
+  levelDifficulty: 2
   levelLengthInSeconds: 10
   scorePerGopher: 5
   minSecondsToSpawn: 2
   maxSecondsToSpawn: 5
-  minGopherLifetime: 3
-  maxGopherLifetime: 6
+  minGopherLifetime: 1
+  maxGopherLifetime: 2

@@ -43,3 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4141272331
+    locked: 0
+  - name: Spawners
+    uniqueID: 677715825
+    locked: 0
+  - name: Gophers
+    uniqueID: 3146892695
+    locked: 0
