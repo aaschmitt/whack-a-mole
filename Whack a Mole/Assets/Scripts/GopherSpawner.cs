@@ -14,6 +14,7 @@ public class GopherSpawner : MonoBehaviour
     public float MaxGopherLifetime { get; set; }
 
     [SerializeField] private Gopher gopherPrefab = null;
+    [SerializeField] private Transform spawnPoint = null;
 
     private bool _hasGopher = false;
     private Gopher _currentGopher = null;
@@ -39,7 +40,7 @@ public class GopherSpawner : MonoBehaviour
 
     private void SpawnGopher()
     {
-        _currentGopher = Instantiate(gopherPrefab, this.transform);          // Instantiate a Gopher gameObject at the same location as this spawner
+        _currentGopher = Instantiate(gopherPrefab, spawnPoint);          // Instantiate a Gopher gameObject at the same location as this spawner
         //TODO set gopher's lifetime
         _currentGopher.Lifetime = Random.Range(MinGopherLifetime, MaxGopherLifetime);
     }
