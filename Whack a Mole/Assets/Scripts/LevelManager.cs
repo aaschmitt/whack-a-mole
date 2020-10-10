@@ -9,23 +9,37 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject levelTimerPrefab = null;
     [SerializeField] private LevelSettings levelSettings = null;
     [SerializeField] private List<GameObject> gopherSpawners = null;
+    
+    //TODO move these to scriptable object?
+    [SerializeField] private GameObject screenPreGameplay = null;
+    [SerializeField] private GameObject screenGamePlay = null;
+    [SerializeField] private GameObject screenEnd = null;
 
     private LevelTimer _levelTimer = null;
     private LevelScore _levelScore = null;
 
     private void Start()
     {
-        InstantiateLevelObjects();
-        LoadLevelSettings();
-        LevelTimer.TimerFinished += EndLevel;
-        StartLevel();
+        // Set pre-gameplay screen, disable others
+        screenPreGameplay.SetActive(true);
+        screenGamePlay.SetActive(false);
+        screenEnd.SetActive(false);
     }
 
     /*
      * Desc: Starts the level -- Starts level timer and starts spawning gophers
      */
-    private void StartLevel()
+    public void StartLevel()
     {
+        // Set gameplay screen, disable pre-gameplay screen
+        screenPreGameplay.SetActive(false);
+        screenGamePlay.SetActive(true);
+        
+        // WAS PREVIOUSLY IN START()
+        InstantiateLevelObjects();
+        LoadLevelSettings();
+        LevelTimer.TimerFinished += EndLevel;
+        
         _levelTimer.StartTimer();
         StartSpawningGophers();
     }
@@ -35,6 +49,10 @@ public class LevelManager : MonoBehaviour
      */
     private void EndLevel()
     {
+        // Set end level screen, disable gameplay screen
+        screenGamePlay.SetActive(false);
+        screenEnd.SetActive(true);
+        
         _levelTimer.StopTimer();
         StopSpawningGophers();
     }
