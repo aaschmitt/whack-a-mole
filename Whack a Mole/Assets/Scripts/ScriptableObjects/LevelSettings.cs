@@ -19,8 +19,6 @@ public class LevelSettings : ScriptableObject
     public float minSecondsToSpawn = 2f;
     public float maxSecondsToSpawn = 5f;
     public int minGopherLifetime, maxGopherLifetime = 0;
-    
-    
 
     private void OnEnable()
     {
