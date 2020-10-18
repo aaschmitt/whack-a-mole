@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class GopherSpawner : MonoBehaviour
 {
     public static event UnityAction GopherClicked;
-    
+
     public float MinTimeToNextSpawn { get; set; }
     public float MaxTimeToNextSpawn { get; set; }
     public float MinGopherLifetime { get; set; }
@@ -15,6 +15,7 @@ public class GopherSpawner : MonoBehaviour
 
     [SerializeField] private Gopher gopherPrefab = null;
     [SerializeField] private Transform spawnPoint = null;
+    [SerializeField] private ParticleSystem spawnParticleEffect = null;
 
     private bool _hasGopher = false;
     private Gopher _currentGopher = null;
@@ -40,8 +41,11 @@ public class GopherSpawner : MonoBehaviour
 
     private void SpawnGopher()
     {
-        _currentGopher = Instantiate(gopherPrefab, spawnPoint);          // Instantiate a Gopher gameObject at the same location as this spawner
-        //TODO set gopher's lifetime
+        Instantiate(spawnParticleEffect, spawnPoint); // Instantiate a spawn particle effect
+        if (_hasGopher) return;
+        _currentGopher =
+            Instantiate(gopherPrefab,
+                spawnPoint); // Instantiate a Gopher gameObject at the same location as this spawner
         _currentGopher.Lifetime = Random.Range(MinGopherLifetime, MaxGopherLifetime);
     }
 
@@ -60,7 +64,7 @@ public class GopherSpawner : MonoBehaviour
 
     public void StopSpawning()
     {
-        if (_hasGopher) Destroy(_currentGopher.gameObject);                   // If there is an active gopher, destroy it
-        StopCoroutine(_gopherSpawning);                                       // Stop the spawning gophers with coroutine
+        if (_hasGopher && _currentGopher != null) Destroy(_currentGopher.gameObject);                   // If there is an active gopher, destroy it
+        StopCoroutine(_gopherSpawning);                                                                 // Stop the spawning gophers with coroutine
     }
 }

@@ -52,3 +52,9 @@ TagManager:
   - name: Gophers
     uniqueID: 3146892695
     locked: 0
+  - name: UI
+    uniqueID: 897655777
+    locked: 0
+  - name: Cursor
+    uniqueID: 4186560407
+    locked: 0

@@ -72,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 677715825
   m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d5439ac589658014fb0529566718c227, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: c8fe1729dd3749f42b5fcf903ad0d2cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,18 +97,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.056209266, y: 0.49764383}
+  m_Offset: {x: -0.020863295, y: 0.45140016}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.7885715, y: 0.66}
+    oldSize: {x: 2.196, y: 0.892}
     newSize: {x: 6.26, y: 2.31}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0958436, y: 0.9709182}
+  m_Size: {x: 1.2499886, y: 1.299761}
   m_EdgeRadius: 0
 --- !u!114 &1550362899314187636
 MonoBehaviour:
@@ -125,6 +125,8 @@ MonoBehaviour:
   gopherPrefab: {fileID: 8123135642542420702, guid: 90242f60e8253994ab346eac1945a2c2,
     type: 3}
   spawnPoint: {fileID: 1550362899367587193}
+  spawnParticleEffect: {fileID: 379040425858259157, guid: d23cd52871b4c3a47b31c6a1836211d4,
+    type: 3}
 --- !u!1 &1550362899367587190
 GameObject:
   m_ObjectHideFlags: 0

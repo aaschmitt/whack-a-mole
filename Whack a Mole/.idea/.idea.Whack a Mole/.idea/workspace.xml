@@ -23,9 +23,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/LevelOneSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/LevelOneSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GopherSpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GopherSpawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/grass.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/grass.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/hole-removebg-preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/hole-removebg-preview.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/monty mole.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/monty mole.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sand_template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sand_template.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +51,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LevelTimerUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animation/DestroyOnExit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MalletCursor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerPrefsController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -56,15 +70,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelDifficultySettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/AudioClipCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu Scripts/OptionsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPrefsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/DestroyOnExit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MalletCursor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bomb.cs" />
       </list>
     </option>
   </component>
@@ -132,6 +149,8 @@
       <workItem from="1602443930360" duration="856000" />
       <workItem from="1602451328241" duration="1073000" />
       <workItem from="1602615842703" duration="3670000" />
+      <workItem from="1602948782302" duration="6631000" />
+      <workItem from="1603035735258" duration="3861000" />
     </task>
     <servers />
   </component>
