@@ -122,11 +122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f050016c4e6865341b8ef7ec8f98a7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gopherPrefab: {fileID: 8123135642542420702, guid: 90242f60e8253994ab346eac1945a2c2,
-    type: 3}
+  gopherPrefabs:
+  - {fileID: 8123135642542420702, guid: 90242f60e8253994ab346eac1945a2c2, type: 3}
+  - {fileID: 4766605944804853429, guid: 83afcdfaf8faf8843a09325b8d500055, type: 3}
   spawnPoint: {fileID: 1550362899367587193}
   spawnParticleEffect: {fileID: 379040425858259157, guid: d23cd52871b4c3a47b31c6a1836211d4,
     type: 3}
+  bombSpawnPercentage: 0.2
 --- !u!1 &1550362899367587190
 GameObject:
   m_ObjectHideFlags: 0

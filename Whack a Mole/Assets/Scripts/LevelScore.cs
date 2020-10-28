@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class LevelScore : MonoBehaviour
 {
-    public int ScorePerGopher { get; set; }
-    
     private int _currentScore = 0;
     private LevelScoreUI _levelScoreUI = null;
     
@@ -21,9 +19,14 @@ public class LevelScore : MonoBehaviour
         _levelScoreUI.Setup();
     }
 
-    private void AddScore()
+    private void AddScore(int scoreToAdd)
     {
-        _currentScore += ScorePerGopher;                                                                         // Add score and update display
+        if (_currentScore + scoreToAdd <= 0) _currentScore = 0;                                              // Don't go below zero
+        else 
+        {
+            _currentScore += scoreToAdd;                                                                     // Add score and update display
+        }
+        
         _levelScoreUI.UpdateDisplay(_currentScore);
     }
 

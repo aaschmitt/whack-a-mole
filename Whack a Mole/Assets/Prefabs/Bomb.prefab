@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1624247784111278805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 402650379674215841}
+  m_Layer: 0
+  m_Name: explodePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402650379674215841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624247784111278805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.039, y: -0.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4043118018833995954}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5325560001893252751
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,7 +59,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 402650379674215841}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -114,5 +145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30814084f6444eb4f9775919fb9bc59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionParticleSystem: {fileID: 8319694589913453979, guid: fdb13c115b8e6bc4c990fd329fef41a9,
-    type: 3}
+  score: -5
+  disableSpawnerTime: 3
+  gopherClickParticleEffect: {fileID: 0}
+  explosionParticleSystems:
+  - {fileID: 5323876152235120464, guid: 6acee0244aa1cac4fa6db08e9a445d34, type: 3}
+  - {fileID: 8319694589913453979, guid: fdb13c115b8e6bc4c990fd329fef41a9, type: 3}
+  explodePoint: {fileID: 402650379674215841}

@@ -20,24 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6ac5a06-bd54-493a-82b6-e316a6ab5366" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Whack a Mole/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/LevelOneSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/LevelOneSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particle Effects/Bomb Explosion PS.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particle Effects/Bomb Explosion PS.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particle Effects/Bomb Explosion PS.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particle Effects/Bomb Explosion PS.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particle Effects/Gopher Spawn PS.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particle Effects/Gopher Spawn PS.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particle Effects/Mallet Click PS.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particle Effects/Mallet Click PS.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gopher.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GopherSpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GopherSpawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/LevelUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/LevelUI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelOne.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bomb.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/grass.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/grass.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/hole-removebg-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/hole-removebg-preview.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/monty mole.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/monty mole.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sand_template.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sand_template.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MalletCursor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MalletCursor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,20 +67,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelDifficulty.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelDifficultySettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/AudioClipCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu Scripts/OptionsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPrefsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/DestroyOnExit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GopherSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gopher.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MalletCursor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb.cs" />
+        <option value="$PROJECT_DIR$/Assets/FinalScoreUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GopherSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MalletCursor.cs" />
       </list>
     </option>
   </component>
@@ -151,6 +153,12 @@
       <workItem from="1602615842703" duration="3670000" />
       <workItem from="1602948782302" duration="6631000" />
       <workItem from="1603035735258" duration="3861000" />
+      <workItem from="1603222696750" duration="3079000" />
+      <workItem from="1603237677914" duration="1950000" />
+      <workItem from="1603830187061" duration="1013000" />
+      <workItem from="1603835521612" duration="4643000" />
+      <workItem from="1603888200362" duration="5319000" />
+      <workItem from="1603914760947" duration="803000" />
     </task>
     <servers />
   </component>

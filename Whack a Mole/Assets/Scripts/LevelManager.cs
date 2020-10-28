@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject screenPreGameplay = null;
     [SerializeField] private GameObject screenGamePlay = null;
     [SerializeField] private GameObject screenEnd = null;
+    [SerializeField] private GameObject gameplayCursor = null;
 
     private LevelTimer _levelTimer = null;
     private LevelScore _levelScore = null;
@@ -24,6 +25,9 @@ public class LevelManager : MonoBehaviour
         screenPreGameplay.SetActive(true);
         screenGamePlay.SetActive(false);
         screenEnd.SetActive(false);
+        
+        // Disable gameplay cursor
+        gameplayCursor.SetActive(false);
     }
 
     /*
@@ -33,7 +37,11 @@ public class LevelManager : MonoBehaviour
     {
         // Set gameplay screen, disable pre-gameplay screen
         screenPreGameplay.SetActive(false);
+        screenEnd.SetActive(false);
         screenGamePlay.SetActive(true);
+        
+        // Activate gameplay cursor
+        gameplayCursor.SetActive(true);
         
         // WAS PREVIOUSLY IN START()
         InstantiateLevelObjects();
@@ -53,6 +61,9 @@ public class LevelManager : MonoBehaviour
         screenGamePlay.SetActive(false);
         screenEnd.SetActive(true);
         
+        // Disable gameplay cursor
+        gameplayCursor.SetActive(false);
+        
         _levelTimer.StopTimer();
         StopSpawningGophers();
     }
@@ -63,7 +74,6 @@ public class LevelManager : MonoBehaviour
     private void LoadLevelSettings()
     {
         _levelTimer.LevelTimeInSeconds = levelSettings.levelLengthInSeconds;
-        _levelScore.ScorePerGopher = levelSettings.scorePerGopher;
 
         //TODO use LINQ?
         foreach (var gopherSpawner in gopherSpawners)
@@ -104,7 +114,6 @@ public class LevelManager : MonoBehaviour
      */
     private void StopSpawningGophers()
     {
-        //TODO use LINQ?
         foreach (var gopherSpawner in gopherSpawners)
         {
             var component = gopherSpawner.GetComponent<GopherSpawner>();

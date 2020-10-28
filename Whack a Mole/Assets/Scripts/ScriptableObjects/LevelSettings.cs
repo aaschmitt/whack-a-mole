@@ -15,7 +15,6 @@ public class LevelSettings : ScriptableObject
 
     public LevelDifficulty levelDifficulty;
     [Range(0, 180)] public int levelLengthInSeconds;
-    [Range(0, 10)] public int scorePerGopher;
     public float minSecondsToSpawn = 2f;
     public float maxSecondsToSpawn = 5f;
     public int minGopherLifetime, maxGopherLifetime = 0;

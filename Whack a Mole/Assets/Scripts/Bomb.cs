@@ -1,13 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bomb : Gopher
 {
-    [SerializeField] private ParticleSystem explosionParticleSystem = null;
-
-    void OnDestroy()
+    [SerializeField] ParticleSystem[] explosionParticleSystems = null;
+    [SerializeField] private Transform explodePoint = null;
+    
+    public override void SpawnClickEffect()
     {
-        Instantiate(explosionParticleSystem, this.transform);
+        Vector3 pos = explodePoint.position;
+        foreach (ParticleSystem effect in explosionParticleSystems)
+        {
+            Instantiate(effect, pos, Quaternion.identity);
+        }
     }
 }

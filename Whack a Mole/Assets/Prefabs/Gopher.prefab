@@ -95,6 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29907d7851faf084cb4151b2e0f0a43a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 5
+  disableSpawnerTime: 0
+  gopherClickParticleEffect: {fileID: 6255325107361059066, guid: 101862c16c3faa9438ae80d46c285e12,
+    type: 3}
 --- !u!95 &2151857882874379168
 Animator:
   serializedVersion: 3
