@@ -6,10 +6,15 @@ public class PlayerPrefsController : MonoBehaviour
 { 
     // PlayerPref keys
     private const string MASTER_VOLUME_KEY = "master volume";
+    private const string MASTER_LEVELLENGTH_KEY = "master level length";
     
     // "master volume" PlayerPref restrictions
     private const float MIN_VOLUME = 0f;
     private const float MAX_VOLUME = 1f;
+    
+    // "master length" PlayerPref restrictions
+    private const float MIN_LENGTH = 30f;
+    private const float MAX_LENGTH = 90f;
 
     /*
      * Checks to see if supplied volume fits within restrictions, and sets the value of
@@ -33,5 +38,24 @@ public class PlayerPrefsController : MonoBehaviour
     public static float GetMasterVolume()
     {
         return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
+    }
+
+    public static void SetMasterLevelLength(float lengthFraction)
+    {
+        float lengthInSeconds = lengthFraction * 60 + 30;
+        
+        if (lengthInSeconds >= MIN_LENGTH && lengthInSeconds <= MAX_LENGTH)
+        {
+            PlayerPrefs.SetFloat(MASTER_LEVELLENGTH_KEY, lengthFraction);
+        }
+        else
+        {
+            Debug.LogError("Master length is out of range");
+        }
+    }
+
+    public static float GetMasterLength()
+    {
+        return PlayerPrefs.GetFloat(MASTER_LEVELLENGTH_KEY);
     }
 }

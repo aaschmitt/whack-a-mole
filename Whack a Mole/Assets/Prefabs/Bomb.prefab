@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30814084f6444eb4f9775919fb9bc59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: -5
+  score: -10
   disableSpawnerTime: 3
   gopherClickParticleEffect: {fileID: 0}
   explosionParticleSystems:

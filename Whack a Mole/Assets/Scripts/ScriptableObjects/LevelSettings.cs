@@ -24,8 +24,8 @@ public class LevelSettings : ScriptableObject
         switch (levelDifficulty)
         {
             case LevelDifficulty.Easy:
-                minGopherLifetime = 3;
-                maxGopherLifetime = 6;
+                minGopherLifetime = 1;
+                maxGopherLifetime = 2;
                 break;
             case LevelDifficulty.Normal:
                 minGopherLifetime = 2;
@@ -38,5 +38,10 @@ public class LevelSettings : ScriptableObject
             default:
                 break;
         }
+    }
+
+    public void SetLevelLength(int levelLength)
+    {
+        levelLengthInSeconds = levelLength;
     }
 }

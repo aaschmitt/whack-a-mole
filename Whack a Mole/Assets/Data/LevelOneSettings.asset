@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LevelOneSettings
   m_EditorClassIdentifier: 
   levelDifficulty: 0
-  levelLengthInSeconds: 5
-  minSecondsToSpawn: 2
-  maxSecondsToSpawn: 5
-  minGopherLifetime: 3
-  maxGopherLifetime: 6
+  levelLengthInSeconds: 30
+  minSecondsToSpawn: 0.5
+  maxSecondsToSpawn: 2
+  minGopherLifetime: 1
+  maxGopherLifetime: 2

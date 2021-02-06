@@ -10,7 +10,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private LevelSettings levelSettings = null;
     [SerializeField] private List<GameObject> gopherSpawners = null;
     
-    //TODO move these to scriptable object?
     [SerializeField] private GameObject screenPreGameplay = null;
     [SerializeField] private GameObject screenGamePlay = null;
     [SerializeField] private GameObject screenEnd = null;
@@ -58,7 +57,7 @@ public class LevelManager : MonoBehaviour
     private void EndLevel()
     {
         // Set end level screen, disable gameplay screen
-        screenGamePlay.SetActive(false);
+        //screenGamePlay.SetActive(false);
         screenEnd.SetActive(true);
         
         // Disable gameplay cursor
